@@ -9,7 +9,7 @@ Vagrant.configure("2") do |config|
   # --- Networking ---
   # eth0: NAT (default)
   # eth1: host-only, left unconfigured so students can set static IP (Task 7.1)
-  config.vm.network "private_network", type: "192.168.56.10", auto_config: false
+  config.vm.network "private_network", ip: "192.168.56.10", auto_config: false
 
   # --- Resources ---
   config.vm.provider "virtualbox" do |vb|
